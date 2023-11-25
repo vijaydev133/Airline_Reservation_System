@@ -411,12 +411,12 @@ public class BookTicket extends javax.swing.JInternalFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        if(custId.getText().equals("") && fName.getText().equals("") && lName.getText().equals("") && contact.getText().equals("") && gender.getText().equals("")){
+        if(custId.getText().equals("") || fName.getText().equals("") || lName.getText().equals("") || contact.getText().equals("") || gender.getText().equals("")){
             JOptionPane.showMessageDialog(null, "Kindly fill the customer details");
             return;
         }
         
-        if(fare.getText().equals("") && totalFare.getText().equals("") && totalTickets.getText().equals("")){
+        if(fare.getText().equals("") || totalFare.getText().equals("") || totalTickets.getText().equals("")){
           JOptionPane.showMessageDialog(null, "Kindly fill the fare and ticket details");
           return;
         }

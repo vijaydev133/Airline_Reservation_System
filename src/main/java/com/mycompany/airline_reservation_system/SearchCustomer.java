@@ -413,6 +413,11 @@ public class SearchCustomer extends javax.swing.JInternalFrame {
             }
             String Date = Dob.format(dob.getDate());
             
+            if(CustomerId.equals("") || FirstName.equals("") || LastName.equals("") || PassportNo.equals("") || Address.equals("") || NationalId.equals("") || Contact.equals("") || Gender.equals("")){
+                JOptionPane.showMessageDialog(null, "Kindly fill the customer details");
+                return;
+            }
+            
             
             
             Connection con;

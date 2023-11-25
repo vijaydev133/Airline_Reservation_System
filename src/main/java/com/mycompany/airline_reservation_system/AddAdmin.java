@@ -226,6 +226,10 @@ public class AddAdmin extends javax.swing.JInternalFrame {
             String UserName = Username.getText();
             String PassWord = Password.getText();
             
+            if(AdminID.equals("") || FirstName.equals("") || LastName.equals("") || UserName.equals("") || PassWord.equals("") ){
+                JOptionPane.showMessageDialog(null, "Kindly fill the customer details");
+                return;
+            }
             
             
             Connection con;

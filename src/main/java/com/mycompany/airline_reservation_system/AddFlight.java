@@ -293,6 +293,13 @@ public class AddFlight extends javax.swing.JInternalFrame {
             String FlightSeat = flightSeats.getText();
             String FlightFare = flightFare.getText();
 //            String FlightDOF = flightDof.getText();
+            
+            
+            if(FlightId.equals("") || FlightName.equals("") || FlightArrival.equals("") || FlightDeparture.equals("") || FlightDuration.equals("") || FlightSeat.equals("") || FlightFare.equals("") ){
+                JOptionPane.showMessageDialog(null, "Kindly fill the Flight details");
+                return;
+            }
+            
             DateFormat FlightDOF = new SimpleDateFormat("yyyy-MM-dd");
             
             String Date = FlightDOF.format(flightDof.getDate());

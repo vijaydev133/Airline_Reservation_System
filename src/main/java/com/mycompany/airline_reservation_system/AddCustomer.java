@@ -324,14 +324,22 @@ public class AddCustomer extends javax.swing.JInternalFrame {
             String Address = addr.getText();
             String NationalId = natId.getText();
             String Contact = contact.getText();
-            DateFormat Dob = new SimpleDateFormat("yyyy-dd-MM");
+            
             String Gender = "";
             if(male.isSelected()){
                 Gender = "male";
             }else{
                 Gender = "female";
             }
+            
+            
+            if(CustomerId.equals("") || FirstName.equals("") || LastName.equals("") || PassportNo.equals("") || Address.equals("") || NationalId.equals("") || Contact.equals("") || Gender.equals("")){
+                JOptionPane.showMessageDialog(null, "Kindly fill the customer details");
+                return;
+            }
+            DateFormat Dob = new SimpleDateFormat("yyyy-dd-MM");
             String Date = Dob.format(dob.getDate());
+            
             
             
             
