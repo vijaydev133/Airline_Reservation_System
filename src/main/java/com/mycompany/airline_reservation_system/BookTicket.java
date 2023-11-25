@@ -119,6 +119,11 @@ public class BookTicket extends javax.swing.JInternalFrame {
         departure.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chennai", "Mumbai", "Bangalore", "Hyderabad" }));
 
         arrival.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chennai", "Mumbai", "Bangalore", "Hyderabad" }));
+        arrival.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                arrivalActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("Search");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -642,6 +647,10 @@ this.setVisible(false);
         
         
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void arrivalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_arrivalActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_arrivalActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

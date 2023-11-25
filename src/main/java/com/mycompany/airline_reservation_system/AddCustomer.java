@@ -28,7 +28,9 @@ public class AddCustomer extends javax.swing.JInternalFrame {
     public AddCustomer() {
         initComponents();
         this.getContentPane().setBackground(blue);
+        custID.setEditable(false);
         AutoID();
+        
     }
     
     public void AutoID(){
@@ -207,8 +209,10 @@ public class AddCustomer extends javax.swing.JInternalFrame {
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("D.O.B");
 
+        male.setForeground(new java.awt.Color(255, 255, 255));
         male.setText("Male");
 
+        female.setForeground(new java.awt.Color(255, 255, 255));
         female.setText("Female");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -320,7 +324,7 @@ public class AddCustomer extends javax.swing.JInternalFrame {
             String Address = addr.getText();
             String NationalId = natId.getText();
             String Contact = contact.getText();
-            DateFormat Dob = new SimpleDateFormat("yyyy-mm-dd");
+            DateFormat Dob = new SimpleDateFormat("yyyy-dd-MM");
             String Gender = "";
             if(male.isSelected()){
                 Gender = "male";
